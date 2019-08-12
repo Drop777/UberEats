@@ -1,0 +1,124 @@
+@media (max-width:1023px) {
+  .header {
+    padding: 0 5px;
+
+    &__logo {
+      display: block;
+      margin: 30px 0;
+
+      width: 105px;
+      height: 10px;
+    }
+
+    &__street--inp {
+      width: 170px;
+    }
+
+    &__button-login {
+      margin: 16px 8px;
+    }
+  }
+}
+
+@media (max-width:639px) {
+  .header {
+
+    &__form {
+      display: none;
+    }
+
+    &__buy--icon {
+      display: none;
+    }
+  }
+
+}
+
+@media (max-width: 1023px) {
+  .body {
+    padding: 40px 5px 80px;
+    &__cards {
+      grid-template-columns: repeat(2, 49%);
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  .body {
+    &__cards {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(9, auto);
+    }
+
+    &__form-second {
+      display: flex;
+    }
+
+    &__from {
+      width: 65px;
+      height: 40px;
+
+      border: 1px solid $border-color;
+      border-radius: 2px;
+
+      font-size: $main-font-size;
+      line-height: $form-line-height;
+      text-align: center;
+    }
+
+    &__from-container {
+      margin-right: 16px;
+    }
+
+    &__space {
+      display: block;
+    }
+
+    &__street--inp {
+      width: 85%;
+      height: 40px;
+      border: 1px solid $border-color;
+      border-radius: 2px;
+      padding-left: 30px;
+
+      font-size: $main-font-size;
+      line-height: $form-line-height;
+      color: $input-text-color;
+
+      background-image: url(../images/location.svg);
+      background-repeat: no-repeat;
+      background-position: 12px;
+
+    }
+  }
+}
+
+@media screen and (max-width:1023px) {
+  .footer {
+    padding: 56px 5px 40px;
+  }
+}
+
+@media screen and (max-width:639px) {
+  .footer {
+    &__information {
+      display: block;
+    }
+
+    &__menu {
+      margin: 42px auto;
+    }
+
+    &__apps {
+      padding: 25px;
+    }
+
+    &__bottom {
+      display: block;
+
+      &__item {
+        margin: 24px 0;
+      }
+    }
+  }
+}
