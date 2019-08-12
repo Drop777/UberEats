@@ -1,0 +1,138 @@
+.footer {
+  background-color: $button-color;
+  font-family: Roboto, sans-serif;
+
+  padding: 56px 80px 40px;
+
+  &__logo {
+    margin-bottom: 40px;
+  }
+
+  &__information {
+    display: flex;
+    justify-content: space-around;
+    margin: 32px 0 50px;
+  }
+
+  &__languege {
+    display: flex;
+
+    &__inp {
+      width: 227px;
+      height: 40px;
+      padding: 0 30px;
+
+      background-color: #3b3b3b;
+      border: none;
+
+      font-size: 13px;
+      line-height: 15px;
+      color: $main-color;
+      text-transform: uppercase;
+
+      background-image: url(../images/world.svg);
+      background-repeat: no-repeat;
+      background-position: 10px 12px;
+
+    }
+  }
+
+  &__hash {
+    font-size: $main-font-size;
+    line-height: 19px;
+    color: $main-color;
+
+    margin: 33px 0 22px;
+
+    &__in {
+      color: #49a144;
+    }
+  }
+
+  &__links {
+    list-style: none;
+    padding: 0;
+
+    &__item {
+      display: inline;
+    }
+  }
+
+  &__menu {
+    list-style: none;
+    font-size: 13px;
+    line-height: 15px;
+
+    padding: 0;
+    margin: 10px 70px;
+
+    &__item {
+      display: block;
+      margin-bottom: 23px;
+
+      color: $main-color;
+      text-decoration: none;
+    }
+  }
+
+  &__apps {
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+    padding: 40px 250px;
+    margin: 0 auto;
+
+    &__item {
+      margin: 0 12px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 210px 20px 0;
+
+    &__item {
+      display: block;
+
+      color: $main-color;
+      text-decoration: none;
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+
+  &__hrline {
+    opacity: 0.3;
+  }
+}
+
+@media screen and (max-width:1023px) {
+  .footer {
+    padding: 56px 5px 40px;
+  }
+}
+
+@media screen and (max-width:639px) {
+  .footer {
+    &__information {
+      display: block;
+    }
+
+    &__menu {
+      margin: 42px auto;
+    }
+
+    &__apps {
+      padding: 25px;
+    }
+
+    &__bottom {
+      display: block;
+
+      &__item {
+        margin: 24px 0;
+      }
+    }
+  }
+}

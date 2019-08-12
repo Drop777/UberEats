@@ -1,0 +1,113 @@
+@mixin btn-text-style {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: $form-line-height;
+}
+
+.header {
+  font-family: Roboto, sans-serif;
+
+  padding: 0 80px;
+  height: 72px;
+
+  display: flex;
+  justify-content: space-between;
+
+  background: $main-color;
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+
+  &__logo {
+    display: block;
+    margin: 30px 0;
+  }
+
+  &__form {
+    display: flex;
+    margin: 16px 0;
+  }
+
+  &__from {
+    width: 65px;
+    height: 40px;
+
+    border: 1px solid $border-color;
+    border-radius: 2px;
+
+    font-size: $main-font-size;
+    line-height: $form-line-height;
+    text-align: center;
+  }
+
+  &__street--inp {
+
+    width: 291px;
+    height: 40px;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    padding-left: 30px;
+
+    font-size: $main-font-size;
+    line-height: $form-line-height;
+    color: $input-text-color;
+
+    background-image: url(../images/location.svg);
+    background-repeat: no-repeat;
+    background-position: 12px;
+
+  }
+
+  &__button-login {
+    width: 80px;
+    height: 40px;
+    margin: 16px;
+
+    background-color: $main-color;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+
+    @include btn-text-style();
+
+    &:hover {
+      background-color: $button-color;
+      color: $main-color;
+      border: 1px solid $button-color;
+    }
+  }
+
+  &__button-register {
+    width: 80px;
+    height: 40px;
+
+    background-color: $button-color;
+    border: none;
+    border-radius: 2px;
+    color: $main-color;
+
+    @include btn-text-style();
+
+    &:hover {
+      background-color: $main-color;
+      color: $button-color;
+      border: 1px solid $button-color;
+    }
+
+  }
+
+  &__buy {
+    &--icon {
+      background: url(../images/basket.svg);
+      width: 19px;
+      height: 24px;
+      margin: 24px 10px 24px 0;
+    }
+  }
+
+  &__space {
+    display: inline-block;
+    margin: 12px 3px 0;
+    font-weight: 300;
+    font-size: $main-font-size;
+    line-height: 19px;
+  }
+}
